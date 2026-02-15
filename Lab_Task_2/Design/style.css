@@ -39,12 +39,28 @@ input [type="text"],input [type="Number"],input [type="file"],input [type="date"
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px; 
 }
-input [type="submit"]:hover{
-    background-color:chartreuse;
+input[type="submit"]{
+     display: block;
+    margin: 20px auto 0 auto;
+    width: 320px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
     cursor: pointer;
-    font-display: auto;
+    background: linear-gradient(to bottom, #1b87d4 0%, #0b5fa6 100%);
+    transition: 0.3s;
 
 }
+input [type="submit"]:hover{
+    background:blue ;
+     
+  transform:scale(1.03) ;
+  
+}
+
 #Address{
  max-width:300px ;
  min-width: 100px ;
