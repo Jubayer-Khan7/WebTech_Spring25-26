@@ -8,7 +8,7 @@ body{
 }
 h1{
     text-align: center;
-    color: blue;
+    color: brown;
     font-style: italic;
 }
 form{
@@ -29,7 +29,7 @@ label{
 input [type="text"],input [type="Number"],input [type="file"],input [type="date"],select,textarea{
     width: 300px;
     margin-top: 10px;
-    border: 20px blue;
+    border: 20px brown;
     border-radius: 10px;
     font-size: 20px;
     border-bottom: 18px;
@@ -55,9 +55,11 @@ input[type="submit"]{
 
 }
 input [type="submit"]:hover{
-    background:blue ;
-     
-  transform:scale(1.03) ;
+    
+    background-color:blue  ;
+     font-display: auto;
+     display: flex;
+  transform:scale(2.03) ;
   
 }
 
