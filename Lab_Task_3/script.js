@@ -1,6 +1,9 @@
 function validation(){
     let isNameValid = collect_name();
     let isAgeValid = collect_age();
+    let isDOBValid = collect_dob();
+    let isVarsityNValid = collect_varsity();
+    
     return false;
 }
 function collect_name(){
@@ -17,11 +20,10 @@ function collect_name(){
     }
 
     else{
- document.getElementById("namee").innerHTML = "";
+      document.getElementById("namee").innerHTML = "";
       
     }
-   console.log(name);
-   return true;
+  return false;
 }
 function collect_age(){
     let age= document.getElementById("SAge").value;
@@ -39,9 +41,39 @@ function collect_age(){
          document.getElementById("Age").innerHTML = "";
      
     }
-     console.log(age);
-   return true;
+    
+   return false;
      
+}
+function collect_dob(){
+     var dob = document.getElementById('sdob').value;
+     console.log(dob); 
+
+if(dob ==""){
+    document.getElementById("DOB").innerHTML="**Select the Date Properly" 
+    return false;   
+}
+else{
+     document.getElementById("DOB").innerHTML=""; 
+    
+}
+
+return false;
+}
+function collect_varsity(){
+     let varsity = document.getElementById("varsityName").value;
+     console.log(varsity); 
+
+if(varsity==""){
+    document.getElementById("vtn").innerHTML="**Write your varsity name"; 
+    return false;   
+}
+else{
+     document.getElementById("vtn").innerHTML=""; 
+    
+}
+
+return false;
 }
 
 
@@ -68,42 +100,3 @@ function collect_age(){
 
 
 
-
-
-// function validation(){
-// var name = document.getElementById('Sname').value;
-// var age = document.getElementById('SAge').value;
-// var sdob = document.getElementById('dob').value; 
-// var edt = document.getElementById('teacher').value; 
-
-
-// if(name == ""){
-//    document.getElementById('namee').innerHTML="**Please Write Valid Name";
-//   return false;
-// }
-//   if(name.length<2){
-//     document.getElementById('namee').innerHTML="**Please Write at least 4 charachter";
-//         return false;
-//   }
-   
-
-//   if(age == ""){
-//     document.getElementById('Age').innerHTML="*Please fill the gaps";
-//        return false; 
-//        if(isNaN(age)) {
-//         Document.getElementById('Age').innerHTML="*Please fill the gaps with number";
-//        return false;
-//        }
-// }
-
-//   if(sdob == ""){
-//     document.getElementById('DOB').innerHTML="*Please fill the gaps";
-//       return false;  
-// }
-//   if(edt == ""){
-//     document.getElementById('tch').innerHTML="*Please fill the gaps";
-//       return false;  
-// }
-
-
-// }
