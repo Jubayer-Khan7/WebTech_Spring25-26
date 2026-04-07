@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>EdTech Platform</h1>
+    </div>
+    <div class="topnav">
+        <a href="https://learnwithhemel.com/">Learn With Hemel Bhai</a>
+    </div>
+    <div class="mid">
+        <h1>Student Information</h1>
+    </div>
+        
+    
+    <form onsubmit="return validation()">
+    <label for="Name">Name: </label>
+    <input type="text" name="name" id="Sname"> <br><span id="namee"></span>
+    
+    <br>
+     <br>
+     <label for="Age">Age:</label>
+     <input type="number" name="age" id="SAge"><br><span id="Age"></span>
+    <br>
+    <br>
+     <label for="DOB">Date Of Birth: </label>
+     <input type="date" name="dob" id="sdob" ><br><span id="DOB"></span>
+     <br>
+    <br>
+     <label for="Teacher:">Teacher</label>
+     <select id="teacher" name="edt"><br><span id="tch"></span>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Physics">Physics</option>
+        <option value="Math">Math</option>
+        <option value="Biology">Biology</option> 
+    </select>
+    <br>
+    <br>
+
+    <label for="Varsity">Varsity Name:</label>
+     <input type="text" name="varsity" id="varsityName"><span id="vtn"></span>
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
