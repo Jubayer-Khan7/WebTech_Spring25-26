@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.box {
+    width: 350px;
+    padding: 20px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 10px;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    background-color: #eee;
+    box-sizing: border-box;
+}
+
+
