@@ -11,4 +11,4 @@
     Let's Go to the <a href="./View/registration.php">Registration Page</a>
     
 </body>
-</html>
+</html> 
